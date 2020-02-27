@@ -13,6 +13,7 @@ while playAgain == True:
     userAnswer = False
     randomNumber = randint(1, 100)
 
+    numTries = 0
 
     while userAnswer == False:
 
@@ -22,22 +23,28 @@ while playAgain == True:
 
             userAnswer = True
 
+            numTries = numTries + 1
+
         elif userInput < randomNumber:
 
             print("Too low!!")
 
+            numTries = numTries + 1
         else:
 
             print("Too high!!")
 
-    print("Congrats!! You Win")
+            numTries = numTries + 1
+
+    print("Congrats!! You Win!!")
+    print("It took you ",numTries, " tries" )
     print("Do you want to play again? Select y or n")
 
     again = input()
 
     if again == 'n':
 
-        print("Thanks for playinG!")
+        print("Thanks for playing!")
 
         break
 
