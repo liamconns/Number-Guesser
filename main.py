@@ -30,9 +30,6 @@ while playAgain == True:
 
             print("Too high!!")
 
-
-            
-
     print("Congrats!! You Win")
     print("Do you want to play again? Select y or n")
 
